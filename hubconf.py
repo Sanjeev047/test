@@ -120,6 +120,14 @@ def yolov5x6(pretrained=True, channels=3, classes=80, autoshape=True, _verbose=T
     # YOLOv5-xlarge-P6 model https://github.com/ultralytics/yolov5
     return _create('yolov5x6', pretrained, channels, classes, autoshape, _verbose, device)
 
+def last(pretrained=True, channels=3, classes=80, autoshape=True, _verbose=True, device=None):
+    # YOLOv5-xlarge-P6 model https://github.com/ultralytics/yolov5
+    return _create('last', pretrained, channels, classes, autoshape, _verbose, device)
+
+def last2(pretrained=True, channels=3, classes=80, autoshape=True, _verbose=True, device=None):
+    # YOLOv5-xlarge-P6 model https://github.com/ultralytics/yolov5
+    return _create('last2', pretrained, channels, classes, autoshape, _verbose, device)
+
 
 if __name__ == '__main__':
     model = _create(name='yolov5s', pretrained=True, channels=3, classes=80, autoshape=True, verbose=True)
